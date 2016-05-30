@@ -26,5 +26,26 @@ namespace wsCalculadora.Services
         {
             return valor1 + valor2;
         }
+
+        [WebMethod]
+        public Int32 Subtrair(Int32 valor1, Int32 valor2)
+        {
+            //realiza a subtração e retorna o resultado.
+            return (valor1 - valor2);
+        }
+
+        [WebMethod]
+        public Int32 Dividir(Int32 valor1, Int32 valor2)
+        {
+            //realiza a divisão e retorna o resultado.
+            return(valor1 / valor2);
+        }
+
+        [WebMethod]
+        public Int32 Multiplicar(Int32 valor1, Int32 valor2)
+        {
+            //realiza a multiplicação e retorna o resultado.
+            return (valor1 * valor2);
+        }
     }
 }
